@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Atendimentos_init() hook (in hooks/Atendimentos.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Atendimentos-Colaborador-<%%VALUE(id)%%>" class="Atendimentos-Colaborador text-bold"><%%VALUE(Colaborador)%%></td>
+		<td id="Atendimentos-Eleitor-<%%VALUE(id)%%>" class="Atendimentos-Eleitor text-bold"><%%VALUE(Eleitor)%%></td>
+		<td id="Atendimentos-Data-<%%VALUE(id)%%>" class="Atendimentos-Data text-bold"><%%VALUE(Data)%%></td>
+		<td id="Atendimentos-Situacao-<%%VALUE(id)%%>" class="Atendimentos-Situacao text-bold"><%%VALUE(Situacao)%%></td>

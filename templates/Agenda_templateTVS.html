@@ -1,0 +1,12 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Agenda_init() hook (in hooks/Agenda.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Agenda-Responsavel-<%%VALUE(Id)%%>" class="Agenda-Responsavel text-bold"><%%VALUE(Responsavel)%%></td>
+		<td id="Agenda-Data-<%%VALUE(Id)%%>" class="Agenda-Data text-bold"><%%VALUE(Data)%%></td>
+		<td id="Agenda-Hora-<%%VALUE(Id)%%>" class="Agenda-Hora text-bold"><%%VALUE(Hora)%%></td>
+		<td id="Agenda-Evento-<%%VALUE(Id)%%>" class="Agenda-Evento text-bold"><%%VALUE(Evento)%%></td>
+		<td id="Agenda-Local-<%%VALUE(Id)%%>" class="Agenda-Local text-bold"><img src="<%%GOOGLEMAPTHUMB(Local)%%>" style="max-width: 50px; max-height: 50px; " ></td>

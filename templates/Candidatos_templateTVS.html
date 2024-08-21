@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Candidatos_init() hook (in hooks/Candidatos.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Candidatos-Partido-<%%VALUE(id)%%>" class="Candidatos-Partido text-bold"><%%VALUE(Partido)%%></td>
+		<td id="Candidatos-Nome-<%%VALUE(id)%%>" class="Candidatos-Nome text-bold"><%%VALUE(Nome)%%></td>
+		<td id="Candidatos-Numero-<%%VALUE(id)%%>" class="Candidatos-Numero text-right text-bold"><%%VALUE(Numero)%%></td>
+		<td id="Candidatos-Cargo-<%%VALUE(id)%%>" class="Candidatos-Cargo text-bold"><%%VALUE(Cargo)%%></td>
